@@ -51,9 +51,9 @@ public class BaseClass {
 	public void setup(String br) {
 
 		if(br.equals("chrome")) {
-			//chromeopt = new ChromeOptions();
-			//chromeopt.addArguments("--disable-popup-blocking");
-			//chromeopt.addExtensions(new File("./Drivers/Adblock.crx"));
+			chromeopt = new ChromeOptions();
+			chromeopt.addArguments("--disable-popup-blocking");
+			chromeopt.addExtensions(new File("./Drivers/Adblock.crx"));
 			driver = new ChromeDriver(chromeopt);
 		}
 		else if(br.equals("firefox")) {
